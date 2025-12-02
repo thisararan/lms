@@ -1,0 +1,88 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto; /* Allow main to grow but not shrink below content height */
+  padding-top: 80px;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.course-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  height: 100%;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.auth-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.navbar-custom {
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+  color: white !important;
+}
+
+.navbar-custom .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white !important;
+}
+
+/* Ensure footer stays at bottom */
+body {
+  margin: 0; /* Remove default margin to avoid layout issues */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.d-flex.flex-column.min-vh-100 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+/* Ensure footer is at the bottom */
+footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  width: 100%;
+}

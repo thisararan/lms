@@ -1,0 +1,238 @@
+:root {
+  /* Moodle Color Palette */
+  --moodle-primary: #f98012;
+  --moodle-primary-dark: #e6730f;
+  --moodle-primary-light: #ffa347;
+  --moodle-secondary: #333333;
+  --moodle-accent: #4a90e2;
+  --moodle-success: #28a745;
+  --moodle-warning: #ffc107;
+  --moodle-danger: #dc3545;
+  --moodle-info: #17a2b8;
+  --moodle-light: #f8f9fa;
+  --moodle-dark: #343a40;
+  --moodle-gray: #6c757d;
+  --moodle-border: #dee2e6;
+  --moodle-bg: #f5f5f5;
+  --moodle-card-bg: #ffffff;
+  --moodle-sidebar-bg: #2c3e50;
+  --moodle-sidebar-text: #ecf0f1;
+  --moodle-gradient: linear-gradient(135deg, #f98012 0%, #ff6b6b 100%);
+  --moodle-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --moodle-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Moodle Navbar */
+.moodle-navbar {
+  background: var(--moodle-gradient) !important;
+  box-shadow: var(--moodle-shadow);
+  padding: 0.8rem 0;
+  border: none;
+}
+
+.moodle-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.moodle-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin: 0 0.2rem;
+}
+
+.moodle-navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white !important;
+  transform: translateY(-1px);
+}
+
+/* Moodle Cards */
+.moodle-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--moodle-shadow);
+  transition: all 0.3s ease;
+  background: var(--moodle-card-bg);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.moodle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--moodle-shadow-hover);
+}
+
+.moodle-card-header {
+  background: var(--moodle-gradient);
+  color: white;
+  border: none;
+  padding: 1.25rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.moodle-card-body {
+  padding: 1.5rem;
+}
+
+/* Moodle Buttons */
+.btn-moodle {
+  background: var(--moodle-gradient);
+  border: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(249, 128, 18, 0.2);
+}
+
+.btn-moodle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(249, 128, 18, 0.3);
+  color: white;
+}
+
+.btn-moodle-outline {
+  border: 2px solid var(--moodle-primary);
+  color: var(--moodle-primary);
+  background: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-moodle-outline:hover {
+  background: var(--moodle-primary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Dashboard Styles */
+.dashboard-welcome {
+  background: var(--moodle-gradient);
+  color: white;
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: var(--moodle-shadow);
+}
+
+.dashboard-welcome h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dashboard-welcome p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--moodle-shadow);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--moodle-primary);
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--moodle-shadow-hover);
+}
+
+.stat-card .stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-label {
+  color: var(--moodle-gray);
+  font-weight: 500;
+}
+
+/* Course Cards */
+.course-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--moodle-shadow);
+  transition: all 0.3s ease;
+  height: 100%;
+  background: white;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--moodle-shadow-hover);
+}
+
+.course-card-header {
+  background: var(--moodle-gradient);
+  color: white;
+  padding: 1.5rem;
+  border: none;
+}
+
+.course-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.course-progress {
+  margin: 1rem 0;
+}
+
+/* Footer Styles */
+.moodle-footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+  color: white;
+  padding: 3rem 0 1.5rem;
+  margin-top: auto;
+}
+
+.moodle-footer a {
+  transition: all 0.3s ease;
+}
+
+.moodle-footer a:hover {
+  color: var(--moodle-primary-light) !important;
+  opacity: 1 !important;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--moodle-primary);
+  transform: translateY(-2px);
+}
